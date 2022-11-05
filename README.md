@@ -68,7 +68,7 @@ RegisterNumber:  212221240012
 */
 
 # 4 X 1 Multiplexer
-
+```
 module EX7(i0,i1,i2,i3,s0,s1,y);
 input i0,i1,i2,i3,s0,s1;
 output y;
@@ -81,9 +81,9 @@ and(r,s0,s1c,i2);
 and(s,s0,s1,i3);
 or(y,p,q,r,s);
 endmodule
-
+```
 # 1 X 4 De-Multiplexer
-
+```
 module EX7_2(y0,y1,y2,y3,s0,s1,i);
 input s0,s1,i;
 output y0,y1,y2,y3;
@@ -95,7 +95,7 @@ and(y1,i,s0c,s1c);
 and(y2,i,s0,s1c);
 and(y3,i,s0,s1);
 endmodule
-
+```
 #### RTL LOGIC  
 
 #### 4 X 1 Multiplexer
